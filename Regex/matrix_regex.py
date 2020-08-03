@@ -10,14 +10,14 @@ first_multiple_input = []
 for i in range(n):
     first_multiple_input.append(input())
 
-print(first_multiple_input)
+# print(first_multiple_input)
 
 text = ""
 for i in range(len(first_multiple_input[0])):
     for line in first_multiple_input:
         text += line[i]
 
-print(text)
+# print(text)
 
 text = re.sub(r'(?<=\w)(\W+)(?=\w)', " ", text)
 
